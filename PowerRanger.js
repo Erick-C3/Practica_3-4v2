@@ -5,6 +5,12 @@ class PowerRanger{
     #puntosAtaque = 0;
     #puntosVida = 0;
 
+    /**
+     * Inicializa el objeto power ranger
+     * @param {String} nombre del power ranger
+     * @param {Number} puntosAtaque del power ranger
+     * @param {Number} puntosVida del power ranger
+     */
     constructor(nombre, puntosAtaque, puntosVida){
         this.#nombre = nombre;
         this.#puntosAtaque = puntosAtaque;

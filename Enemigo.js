@@ -4,6 +4,20 @@ class Enemigo{
     #nombre = "def nombre";
     #puntosVida = 0;
     #puntosAtaque = 0;
+
+    /**
+     * Inicializa el objeto enemigo
+     * @param {String} nombre del enemigo
+     * @param {Number} puntosAtaque del enemigo
+     * @param {Number} puntosVida del enemigo
+     */
+    constructor(nombre, puntosAtaque, puntosVida){
+        this.#nombre = nombre;
+        this.#puntosAtaque = puntosAtaque;
+        this.#puntosVida = puntosVida;
+    }
+
+
     getPuntosAtaque(){
         return this.#puntosAtaque;
     }
