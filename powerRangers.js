@@ -1,5 +1,3 @@
-/* const PowerRanger = require("./PowerRanger.js"); */
-
 const PowerRanger = require("./PowerRanger.js");
 
 const powerRangers = [
