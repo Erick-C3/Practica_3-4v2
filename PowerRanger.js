@@ -43,9 +43,13 @@ class PowerRanger{
     atacaA(unEnemigo){
         this.habla("Soy power ranger " + this.getNombre());
         if (this.#puntosVida > 0) {
-            this.habla("Estoy atacando a "+ unEnemigo.getNombre());
-            this.habla("con "+ this.getPuntosAtaque() + " puntos ataque");
-            unEnemigo.defenderseDe(this);
+            if (unEnemigo.getPuntosVida() > 0) {
+                this.habla("Estoy atacando a "+ unEnemigo.getNombre());
+                this.habla("con "+ this.getPuntosAtaque() + " puntos ataque");
+                unEnemigo.defenderseDe(this);
+            }else{
+                this.habla("El enemigo esta muy debil para pelear");
+            }
         }else{
             this.habla("No puedo atacar, estoy herido!");
         }
